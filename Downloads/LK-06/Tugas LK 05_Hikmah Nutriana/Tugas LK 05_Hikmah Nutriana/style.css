@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Comic Sans MS', cursive;
+}
+
+/* Background pastel */
+body {
+    background: linear-gradient(135deg, #ffd6e0, #e0c3fc, #c3f0ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Tombol utama */
+button {
+    background: linear-gradient(45deg, #ffb6c1, #cdb4db);
+    border: none;
+    padding: 10px 20px;
+    color: #5a3d5c;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #cdb4db, #ffb6c1);
+}
+
+/* Box form */
+#formBox {
+    margin-top: 20px;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 25px;
+    width: 340px;
+    box-shadow: 0 10px 25px rgba(200, 150, 255, 0.3);
+}
+
+/* Label */
+label {
+    color: #7b4f7b;
+    font-weight: 600;
+}
+
+/* Input & textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #f3d1f4;
+    margin-top: 5px;
+    outline: none;
+    background: #fffafc;
+    transition: 0.3s;
+}
+
+/* Efek fokus */
+input:focus, textarea:focus {
+    border-color: #cdb4db;
+    box-shadow: 0 0 8px #e0c3fc;
+}
+
+/* Tombol kirim */
+form button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Notifikasi */
+#notif {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Judul daftar */
+h3 {
+    margin-top: 30px;
+    color: #7b4f7b;
+}
+
+/* List */
+#daftar {
+    list-style: none;
+    margin-top: 10px;
+    width: 340px;
+}
+
+/* Item list */
+#daftar li {
+    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(180, 150, 255, 0.2);
+    border-left: 6px solid #ffb6c1;
+    transition: 0.3s;
+}
+
+/* Hover list */
+#daftar li:hover {
+    transform: scale(1.02);
+    background: #fff0f6;
+}
+
+/* Responsif */
+@media (max-width: 500px) {
+    #formBox, #daftar {
+        width: 90%;
+    }
+}
